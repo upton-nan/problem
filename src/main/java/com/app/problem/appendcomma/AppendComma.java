@@ -1,4 +1,4 @@
-package com.app.problem;
+package com.app.problem.appendcomma;
 
 import java.util.ArrayList;
 import java.util.List;
