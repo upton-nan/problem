@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>伪类的替换思路</title>
+
+<style type="text/css">
+div p {
+	display: block;
+	width: 300px;
+	height: 30px;
+	position: relative;
+}
+
+div p span {
+	display: block;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+
+div .before:before {
+	display: block;
+	content: '';
+	width: 10px;
+	height: 10px;
+	border: 1px solid #2c3e50;
+	position: absolute;
+}
+
+div .after:after {
+	display: block;
+	content: '';
+	width: 10px;
+	height: 10px;
+	border: 1px solid #2c3e50;
+	position: absolute;
+}
+/* 根据样式替换掉伪类before和after的效果 */
+div .beforeI i {
+	display: block;
+	content: '';
+	width: 10px;
+	height: 10px;
+	border: 1px solid #2c3e50;
+	position: absolute;
+}
+
+div .afterI i {
+	display: block;
+	content: '';
+	width: 10px;
+	height: 10px;
+	border: 1px solid #2c3e50;
+	position: absolute;
+}
+
+
+</style>
+
+</head>
+<body>
+	<div>
+		<p class="before">
+			<span>++伪类 :before++</span>
+		</p>
+		<p class="after">
+			<span>++伪类:after++</span>
+		</p>
+	</div>
+	
+	
+	<div>
+		<p class="beforeI">
+			<i></i><span>++伪类 :beforeI++</span>
+		</p>
+		<p class="afterI">
+			<span>++伪类:afterI++</span><i></i>
+		</p>
+	</div>
+	
+	
+</body>
+</html>
