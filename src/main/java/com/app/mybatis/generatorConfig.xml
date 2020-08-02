@@ -40,10 +40,10 @@
 		
 		<table tableName="student" domainObjectName="TbStudent">
 		    <generatedKey column="id" sqlStatement="MySql" identity="true"/>
-		    <columnOverride column="username" javaType="java.lang.String" jdbcType="VARCHAR"/>
+		    <!-- <columnOverride column="username" javaType="java.lang.String" jdbcType="VARCHAR"/>
 			<columnOverride column="password" javaType="java.lang.String" jdbcType="VARCHAR"/>
 			<columnOverride column="phone" javaType="java.lang.String" jdbcType="VARCHAR"/>
-			<columnOverride column="email" javaType="java.lang.String" jdbcType="VARCHAR"/>
+			<columnOverride column="email" javaType="java.lang.String" jdbcType="VARCHAR"/> -->
 		</table>
 	</context>
 </generatorConfiguration>
